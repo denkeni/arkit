@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <base href="@@base@@" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="viewport-fit=cover, width=device-width, height=device-height, initial-scale=1" />
+    <link rel="stylesheet" href="engine/main.css" />
+    <link rel="stylesheet" href="theme/tokyo.css" />
+    <!--
+      <link rel="stylesheet" href="engine/katex/katex.min.css" />
+    -->
+    <!--<link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />-->
+    <style>
+    :root{
+--logo: ;
+--darkaccent1color: ;
+--lightaccent1color: ;
+--accent2: #43aa8b;
+--accent3: #f9c74f;
+--accent4: #90be6d;
+--accent5: #f8961e;
+--accent6: #577590;
+--lighttitletextcolor: #ffffff;
+--darktitletextcolor: #000000;
+--lightbodytextcolor: #ffffff;
+--darkbodytextcolor: #000000;
+--lightbackgroundcolor: transparent;
+--darkbackgroundcolor: transparent;
+--bodyfont: ia writer duo v;
+--titlefont: system-ui;
+} 
+
+    </style>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="engine/print.css"
+      media="print"
+    />
+  </head>
+
+  <body class="responsive">
+    <div class="reveal">
+      <div class="slides"><section class="variable-size-headings dark cover-container present has-light-background fitted" data-background-color="#4ea9e2" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-cover" style="width: 100%; font-size: 1rem;">
+        <div style=""><h1 id="arkit">ARKit</h1>
+
+<h6 id="denkeni">@denkeni</h6>
+
+<h6 id="2023-06-14">2023-06-14</h6></div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      
+</section><section class="variable-size-headings dark v-split-container present has-light-background fitted" data-background-color="#4699d5" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-v-split media-grid" style="width: 100%; font-size: 1rem;">
+        <div style=""><h1 id="isaronlyaboutplacingobjects">Is AR only about placing objects?</h1></div>
+        <img src="images/460x0w.webp.org.webmproject_1.webp" class=" size-contain position-center-center" style="">
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+</section><section class="variable-size-headings dark v-split-container present has-dark-background fitted" data-background-color="#3e89c8" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-v-split media-grid" style="width: 100%; font-size: 1rem;">
+        <div style=""><h1 id="isaronlyaboutfaceeffects">Is AR only about face effects?</h1></div>
+        <img src="images/460x0w.webp.org.webmproject.webp" class=" size-contain position-center-center" style="">
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+</section><section class="variable-size-headings dark cover-container present has-dark-background fitted" data-background-color="#3679bc" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-cover" style="width: 100%; font-size: 1rem;">
+        <div style=""><h1 id="arkit">ARKit</h1>
+
+<h3 id="iphonex2017">iPhone X (2017)</h3></div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      
+</section><section class="variable-size-headings dark cover-container present has-dark-background fitted" data-background-color="#4071b5" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-cover" style="width: 100%; font-size: 1rem;">
+        <div style=""><h1 id="arkit7"><del>ARKit 7</del></h1>
+
+<h3 id="applevisionpro2023">Apple Vision Pro (2023)</h3></div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      
+</section><section class="variable-size-headings dark default-container present has-dark-background fitted" data-background-color="#5e73b4" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-default" style="width: 100%; font-size: 0.906rem;">
+        <div style=""><ul>
+<li>ARKit 1 (2017)／iOS 11</li>
+<li>ARKit 2 (2018)／iOS 12</li>
+<li>ARKit 3 (2019)／iOS 13</li>
+<li>ARKit 4 (2020)／iOS 14</li>
+<li>ARKit 5 (2021)／iOS 15</li>
+<li>ARKit 6 (2022)／iOS 16</li>
+<li>Spatial Computing (2023)／visionOS</li>
+</ul></div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      
+</section><section class="variable-size-headings dark full-image-container present has-dark-background fitted" data-background-color="#7b75b3" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-full-image media-grid" style="width: 100%; font-size: 1rem;">
+        <div style=""><div class="single-image-wrapper"><img src="images/IMG_5D58986C3F42-1.jpeg" class=" size-contain position-center-center"></div></div>
+        
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+</section><section class="variable-size-headings dark full-image-container present has-light-background fitted" data-background-color="#9977b3" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-full-image media-grid" style="width: 100%; font-size: 1rem;">
+        <div style=""><div class="single-image-wrapper"><img src="images/AR.png" class=" position-center-center"></div></div>
+        
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+</section><section class="variable-size-headings dark cover-container present has-dark-background fitted" data-background-color="#a9629e" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-cover" style="width: 100%; font-size: 1rem;">
+        <div style=""><h1 id="arisaboutunderstandingenvironment">AR is about understanding environment</h1></div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      
+</section><section class="variable-size-headings dark cover-container present has-dark-background fitted" data-background-color="#b94d89" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-cover" style="width: 100%; font-size: 1rem;">
+        <div style=""><h1 id="arisaboutsensors">AR is about sensors</h1></div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      
+</section><section class="variable-size-headings dark v-split-container present has-dark-background fitted" data-background-color="#c93875" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-v-split" style="width: 100%; font-size: 0.859rem;">
+        <div style=""><p>iPhone 2G: accelerometer, proximity, ambient light</p>
+
+<p>iPhone 3G: GPS</p>
+
+<p>iPhone 3GS: compass</p>
+
+<p>iPhone 4: gyroscope</p>
+
+<p>.</p>
+
+<p>.</p>
+
+<p>.</p>
+
+<p>iPhone 6: barometer</p>
+
+<p>.</p></div>
+        <div style=""><p>iPhone 7 <mark><strong>Plus</strong></mark>: telephoto camera</p>
+
+<p>iPhone X: TrueDepth camera</p>
+
+<p>.</p>
+
+<p>iPhone 11: ultra wide camera</p>
+
+<p>iPhone 12 <mark><strong>Pro</strong></mark>: LiDAR</p>
+
+<p>.</p>
+
+<p>.</p>
+
+<p>Apple Vision Pro: IR camera and illuminator</p></div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+</section><section class="variable-size-headings dark v-split-container present has-dark-background fitted" data-background-color="#d12e61" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-v-split" style="width: 100%; font-size: 1rem;">
+        <div style=""><h1 id="onlyprodevicescomewithlidar">Only <strong>Pro</strong> devices come with LiDAR</h1></div>
+        <div style=""><h4 id="since2020">Since 2020</h4>
+
+<ul>
+<li>iPhone 12 Pro</li>
+<li>iPad Pro 11-inch (2nd generation)</li>
+<li>iPad Pro 12.9-inch (4th generation)</li>
+</ul>
+
+<h4 id="2023">2023</h4>
+
+<ul>
+<li>Apple Vision Pro</li>
+</ul></div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+</section><section class="variable-size-headings dark full-image-container present has-dark-background fitted" data-background-color="#cf2e4d" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-full-image media-grid" style="width: 100%; font-size: 1rem;">
+        <div style=""><div class="single-image-wrapper"><img src="images/Apple-iPhone-14-Pro-iPhone-14-Pro-Max-back-camera-220907.jpeg" class=" position-center-center"></div></div>
+        
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+</section><section class="variable-size-headings dark cover-container present has-dark-background fitted" data-background-color="#cc2f39" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-cover" style="width: 100%; font-size: 1rem;">
+        <div style=""><h1 id="evenappledevicesarefragmented">Even Apple devices are fragmented</h1>
+
+<h6 id="untilapplevisionpro">(Until Apple Vision Pro)</h6></div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      
+</section><section class="variable-size-headings dark cover-container present has-dark-background fitted" data-background-color="#cb3026" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-cover" style="width: 100%; font-size: 1rem;">
+        <div style=""><h1 id="arkit">ARKit</h1>
+
+<h2 id="overview">Overview</h2></div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      
+</section><section class="variable-size-headings has-footnotes dark default-container present has-dark-background fitted" data-background-color="#c33c28" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-default" style="width: 100%; font-size: 0.859rem;">
+        <div style=""><ul>
+<li>ARKit 1 (2017<sup><a href="#fn1" id="fnr1" title="see footnote" class="footnote">1</a></sup>)／A9 or later</li>
+<li>ARKit 2 (2018<sup><a href="#fn2" id="fnr2" title="see footnote" class="footnote">2</a></sup>)／A12</li>
+<li>ARKit 3 (2019)</li>
+<li>ARKit 4 (2020)／LiDAR</li>
+<li>ARKit 5 (2021)</li>
+<li>ARKit 6 (2022)</li>
+<li>Spatial Computing (2023)／Vision Pro</li>
+</ul></div>
+      </div>
+      <div class="footnotes">
+<ol>
+
+<li id="fn1">
+<p>iPhone X (A11) was announced. <a href="#fnr1" title="return to article" class="reversefootnote">↩︎</a></p>
+</li>
+
+<li id="fn2">
+<p>iPhone XS (A12) was announced. <a href="#fnr2" title="return to article" class="reversefootnote">↩︎</a></p>
+</li>
+
+</ol>
+</div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      
+</section><section class="variable-size-headings dark default-container present fit-warning has-dark-background fitted" data-background-color="#bc482b" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-default" style="width: 100%; font-size: 0.625rem;">
+        <div style=""><h1 id="frontcamera">Front Camera</h1>
+
+<ul>
+<li>ARFaceTrackingConfiguration</li>
+<li>TrueDepth Camera</li>
+</ul>
+
+<h1 id="rearcamera">Rear Camera</h1>
+
+<ul>
+<li>ARWorldTrackingConfiguration</li>
+<li>Better with LiDAR</li>
+</ul>
+
+<h6 id="arkitisnotavailableiniossimulator.">(ARKit is not available in iOS Simulator.)</h6></div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      
+</section><section class="variable-size-headings has-footnotes dark default-container present has-dark-background fitted" data-background-color="#b5542e" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-default" style="width: 100%; font-size: 1rem;">
+        <div style=""><h1 id="persistentarexperience12">Persistent AR Experience (1/2)</h1>
+
+<blockquote>
+<p><mark><strong><a href="https://developer.apple.com/documentation/arkit/data_management/saving_and_loading_world_data">Save a world map to a file</a></strong></mark>, use the same relocalization process to recover... even if your app has relaunched<sup><a href="#fn1" id="fnr1" title="see footnote" class="footnote">1</a></sup>.</p>
+</blockquote></div>
+      </div>
+      <div class="footnotes">
+<ol>
+
+<li id="fn1">
+<p><a href="https://developer.apple.com/documentation/arkit/managing_session_life_cycle_and_tracking_quality">Managing Session Life Cycle and Tracking Quality</a>  <a href="#fnr1" title="return to article" class="reversefootnote">↩︎</a></p>
+</li>
+
+</ol>
+</div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      
+</section><section class="variable-size-headings has-footnotes dark default-container present has-dark-background fitted" data-background-color="#b85f37" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-default" style="width: 100%; font-size: 1rem;">
+        <div style=""><h1 id="persistentarexperience22">Persistent AR Experience (2/2)</h1>
+
+<blockquote>
+<p>It's easy to successfully relocalize to a map recorded <mark><em>indoors under consistent artificial lighting</em></mark><sup><a href="#fn1" id="fnr1" title="see footnote" class="footnote">1</a></sup>.</p>
+</blockquote></div>
+      </div>
+      <div class="footnotes">
+<ol>
+
+<li id="fn1">
+<p><a href="https://developer.apple.com/documentation/arkit/managing_session_life_cycle_and_tracking_quality">Managing Session Life Cycle and Tracking Quality</a>  <a href="#fnr1" title="return to article" class="reversefootnote">↩︎</a></p>
+</li>
+
+</ol>
+</div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      
+</section><section class="variable-size-headings dark default-container present has-dark-background fitted" data-background-color="#c56845" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-default" style="width: 100%; font-size: 1rem;">
+        <div style=""><h1 id="sharedexperiences12">Shared Experiences (1/2)</h1>
+
+<ul>
+<li><a href="https://developer.apple.com/documentation/arkit/creating_a_multiuser_ar_experience/">Creating a Multiuser AR Experience</a></li>
+<li>One-time map sharing between devices</li>
+</ul></div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      
+</section><section class="variable-size-headings dark default-container present has-light-background fitted" data-background-color="#d27154" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-default" style="width: 100%; font-size: 1rem;">
+        <div style=""><h1 id="sharedexperiences22">Shared Experiences (2/2)</h1>
+
+<ul>
+<li><a href="https://developer.apple.com/documentation/arkit/creating_a_collaborative_session">Creating a Collaborative Session</a></li>
+<li><a href="https://developer.apple.com/documentation/arkit/streaming_an_ar_experience">Streaming an AR Experience</a></li>
+</ul></div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      
+</section><section class="variable-size-headings dark default-container present has-light-background fitted" data-background-color="#e07b63" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-default" style="width: 100%; font-size: 1rem;">
+        <div style=""><h1 id="detection12">Detection (1/2)</h1>
+
+<ul>
+<li><a href="https://developer.apple.com/documentation/arkit/content_anchors/tracking_and_visualizing_planes">Tracking and Visualizing Planes</a> (.horizontal, .vertical)</li>
+<li><a href="https://developer.apple.com/documentation/arkit/content_anchors/scanning_and_detecting_3d_objects">Scanning and detecting 3D objects</a></li>
+<li><a href="https://developer.apple.com/documentation/arkit/content_anchors/tracking_and_altering_images">Tracking and altering images</a> (Vision / Core ML)</li>
+</ul></div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      
+</section><section class="variable-size-headings dark full-image-container present has-light-background fitted" data-background-color="#e18757" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-full-image media-grid" style="width: 100%; font-size: 1rem;">
+        <div style=""><div class="single-image-wrapper"><img src="images/rendered2x-1584985272.png" class=" size-contain position-center-center"></div></div>
+        
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+</section><section class="variable-size-headings dark default-container present has-light-background fitted" data-background-color="#e3934b" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-default" style="width: 100%; font-size: 0.953rem;">
+        <div style=""><h1 id="detection22">Detection (2/2)</h1>
+
+<ul>
+<li><a href="https://developer.apple.com/documentation/arkit/content_anchors/visualizing_and_interacting_with_a_reconstructed_scene">Visualizing and Interacting with a Reconstructed Scene</a></li>
+<li>LiDAR: Without requiring the user to move.</li>
+<li>Create a <mark><strong>polygonal model</strong></mark> of the physical environment.</li>
+</ul></div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      
+</section><section class="variable-size-headings dark full-image-container present has-light-background fitted" data-background-color="#e59f3f" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-full-image media-grid" style="width: 100%; font-size: 1rem;">
+        <div style=""><div class="single-image-wrapper"><img src="images/rendered2x-1583329168.png" class=" size-contain position-center-center"></div></div>
+        
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+</section><section class="variable-size-headings dark cover-container present has-light-background fitted" data-background-color="#e0a83a" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-cover" style="width: 100%; font-size: 1rem;">
+        <div style=""><h1 id="facetracking">Face Tracking</h1>
+
+<p><a href="https://developer.apple.com/documentation/arkit/content_anchors/tracking_and_visualizing_faces">Tracking and Visualizing Faces</a> </p></div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      
+</section><section class="variable-size-headings dark cover-container present has-light-background fitted" data-background-color="#d3ac3c" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-cover" style="width: 100%; font-size: 1rem;">
+        <div style=""><h1 id="motioncapture">Motion Capture</h1>
+
+<p><a href="https://developer.apple.com/documentation/arkit/content_anchors/capturing_body_motion_in_3d">Capturing Body Motion in 3D</a> (<a href="https://developer.apple.com/wwdc19/607?time=15m20s">Bringing People into AR</a>)</p></div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      
+</section><section class="variable-size-headings dark cover-container present has-light-background fitted" data-background-color="#c8b03e" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-cover" style="width: 100%; font-size: 1rem;">
+        <div style=""><h1 id="locationanchor">Location Anchor</h1>
+
+<p><a href="https://developer.apple.com/documentation/arkit/content_anchors/tracking_geographic_locations_in_ar">Tracking Geographic Locations in AR</a> </p></div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      
+</section><section class="variable-size-headings dark cover-container present has-light-background fitted" data-background-color="#bcb540" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-cover" style="width: 100%; font-size: 1rem;">
+        <div style=""><h1 id="roomplan">RoomPlan</h1>
+
+<p><a href="https://developer.apple.com/documentation/roomplan/create_a_3d_model_of_an_interior_room_by_guiding_the_user_through_an_ar_experience">Create a 3D model of an interior room by guiding the user through an AR experience</a> </p></div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      
+</section><section class="variable-size-headings has-footnotes dark default-container present fit-warning has-light-background fitted" data-background-color="#9fae44" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-default" style="width: 100%; font-size: 0.485rem;">
+        <div style=""><h1 id="miscellaneous">Miscellaneous</h1>
+
+<table>
+<colgroup>
+<col style="text-align:center;">
+</colgroup>
+
+<tbody>
+<tr>
+	<td style="text-align:center;">ARView / RealityView<sup><a href="#fn1" id="fnr1" title="see footnote" class="footnote">1</a></sup></td>
+</tr>
+<tr>
+	<td style="text-align:center;">Object Capture<sup><a href="#fn1" title="see footnote" class="footnote">1</a></sup></td>
+</tr>
+<tr>
+	<td style="text-align:center;">Reality Composer (Pro)</td>
+</tr>
+<tr>
+	<td style="text-align:center;">AR Coaching View</td>
+</tr>
+<tr>
+	<td style="text-align:center;">Raycasting</td>
+</tr>
+<tr>
+	<td style="text-align:center;">sceneDepth</td>
+</tr>
+<tr>
+	<td style="text-align:center;">Text Annotations</td>
+</tr>
+<tr>
+	<td style="text-align:center;">Audio</td>
+</tr>
+<tr>
+	<td style="text-align:center;">App Clip Codes</td>
+</tr>
+</tbody>
+</table></div>
+      </div>
+      <div class="footnotes">
+<ol>
+
+<li id="fn1">
+<p>Available in RealityKit <a href="#fnr1" title="return to article" class="reversefootnote">↩︎</a></p>
+</li>
+
+</ol>
+</div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      
+</section><section class="variable-size-headings dark cover-container present has-light-background fitted" data-background-color="#83a849" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-cover" style="width: 100%; font-size: 1rem;">
+        <div style=""><h1 id="visionosxros">visionOS (xrOS)</h1>
+
+<h3 id="spatialcomputing">Spatial Computing</h3></div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      
+</section><section class="variable-size-headings dark full-image-container present has-light-background fitted" data-background-color="#67a24e" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-full-image media-grid" style="width: 100%; font-size: 1rem;">
+        <div style=""><div class="single-image-wrapper"><img src="images/visionOS.png" class=" position-center-center"></div></div>
+        
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+</section><section class="variable-size-headings dark default-container present has-light-background fitted" data-background-color="#57a05b" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-default" style="width: 100%; font-size: 0.953rem;">
+        <div style=""><h1 id="spatialcomputing">Spatial Computing</h1>
+
+<ol>
+<li><a href="https://developer.apple.com/videos/play/wwdc2023/10110/">Elevate your windowed app for spatial computing</a></li>
+<li><a href="https://developer.apple.com/videos/play/wwdc2023/10091/">Evolve your ARKit app for spatial experiences</a></li>
+<li><a href="https://developer.apple.com/videos/play/wwdc2023/10073/">Design for spatial input</a></li>
+</ol></div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      
+</section><section class="variable-size-headings dark default-container present fit-warning has-light-background fitted" data-background-color="#54a36f" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-default" style="width: 100%; font-size: 0.766rem;">
+        <div style=""><h1 id="applevisionpro">Apple Vision Pro</h1>
+
+<h2 id="workwithapple"><a href="https://developer.apple.com/visionos/work-with-apple/">Work with Apple</a></h2>
+
+<ol>
+<li>Compatibility evaluations</li>
+<li>Developer labs: Cupertino, London, München, Singapore, 上海, 東京.</li>
+<li>Developer kit</li>
+</ol></div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      
+</section><section class="variable-size-headings dark cover-container present has-light-background fitted" data-background-color="#51a683" data-updated="true" style="display: grid;">
+
+      <div class="header"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      <div class="layout-cover" style="width: 100%; font-size: 1rem;">
+        <div style=""><h1 id="thefutureisinyourhands.">The future is in your hands.</h1></div>
+      </div>
+      <div class="footnotes"></div>
+      <div class="footer"><div class="leading"></div><div class="middle"></div><div class="trailing"></div></div>
+      
+</section></div>
+    </div>
+    <script src="engine/index.js"></script>
+    <!--<script src="engine/d3v4.min.js" charset="utf-8"></script>
+    <script src="engine/charts.min.js" charset="utf-8"></script>
+    <script src="engine/billboard.min.js"></script>-->
+    <script src="engine/pptxgen.min.js"></script>
+                                                   <script src="engine/pfill.js"></script>
+    <script src="engine/published.js"></script>
+
+    <script>
+      Reveal.configure({
+        progress: true,
+        keyboard: true,
+        dependencies: [
+          {
+            src: "engine/highlight.js",
+            sync: true,
+            callback: function () {
+              hljs.initHighlightingOnLoad();
+            },
+          },
+        ],
+      });
+    </script>
+  </body>
+</html>
